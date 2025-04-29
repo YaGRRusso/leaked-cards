@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  logs: false;
+  themes:
+    light --default,
+    dark --prefersdark;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding: 1rem;
+  max-width: 100%;
+
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    padding-inline: 2rem;
+  }
+}
+
+@utility ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+@theme {
+  --color-input: color-mix(in oklab, var(--color-base-content) 20%, #0000);
+  --color-muted: color-mix(in oklab, var(--color-base-content) 60%, #0000);
+
+  --color-red-*: initial;
+  --color-orange-*: initial;
+  --color-amber-*: initial;
+  --color-yellow-*: initial;
+  --color-lime-*: initial;
+  --color-green-*: initial;
+  --color-emerald-*: initial;
+  --color-teal-*: initial;
+  --color-cyan-*: initial;
+  --color-sky-*: initial;
+  --color-blue-*: initial;
+  --color-indigo-*: initial;
+  --color-violet-*: initial;
+  --color-purple-*: initial;
+  --color-fuchsia-*: initial;
+  --color-pink-*: initial;
+  --color-rose-*: initial;
+  --color-slate-*: initial;
+  --color-gray-*: initial;
+  --color-zinc-*: initial;
+  --color-neutral-*: initial;
+  --color-stone-*: initial;
+}
