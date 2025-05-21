@@ -1,0 +1,7 @@
+{
+  "required": "Required field",
+  "invalid": "Invalid value",
+  "min": "The field did not reach the minimum character length",
+  "max": "The field cannot exceed the maximum character length",
+  "length": "The field did not reach the correct character length"
+}

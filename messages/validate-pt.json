@@ -1,0 +1,7 @@
+{
+  "required": "Campo obrigatório",
+  "invalid": "Valor inválido",
+  "min": "O campo não atingiu o tamanho mínimo de caracteres",
+  "max": "O campo não pode exceder o tamanho máximo de caracteres",
+  "length": "O campo não atingiu o tamanho correto de caracteres"
+}

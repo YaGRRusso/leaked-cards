@@ -1,3 +1,113 @@
 {
-  "hello": "Olá, { name }!"
+  "components": {
+    "tryAgain": "Tentar Novamente",
+    "nothingFound": "Nada Encontrado",
+    "nothingFoundDescription": "O servidor não encontrou o recurso solicitado.",
+    "backToStart": "Voltar ao Início",
+    "trustedSite": "Site confiável",
+    "trustedSiteDescription": "100% seguro",
+    "createdBy": "Criado por",
+    "changeLanguage": "Mudar idioma",
+    "leakedCards": "Cartões Vazados",
+    "faq": "Perguntas frequentes",
+    "testimonials": "Depoimentos"
+  },
+  "forms": {
+    "card": {
+      "cardholderName": "Nome no cartão",
+      "cardholderNamePlaceholder": "Nome do Titular",
+      "cardNumber": "Número do cartão",
+      "cardNumberPlaceholder": "Número do cartão de crédito",
+      "cardCvv": "CVV do cartão",
+      "cardCvvPlaceholder": "CVV",
+      "cardExpiry": "Data de expiração do cartão",
+      "cardExpiryPlaceholder": "MM/AA",
+      "cardExpiryMonth": "Mês de expiração",
+      "cardExpiryMonthPlaceholder": "MM",
+      "cardExpiryYear": "Ano de expiração",
+      "cardExpiryYearPlaceholder": "AA",
+      "submit": "Verificar cartão"
+    }
+  },
+  "homePage": {
+    "faq": "Perguntas frequentes",
+    "testimonials": "Depoimentos",
+    "hero": "Descubra se você teve o <strong>cartão vazado</strong> em uma violação de dados.",
+    "heroDescription": "Insira os detalhes do seu cartão e clique no botão abaixo para verificar.",
+    "checkingCard": "Verificando cartão",
+    "checkingCardDescription": "Estamos verificando se o seu cartão foi vazado em uma violação de dados. Isso pode levar alguns segundos...",
+    "statsList": {
+      "checkedCards": "Cartões verificados",
+      "checkedCardsDescription": "Número total de cartões verificados",
+      "leakedCards": "Cartões vazados",
+      "leakedCardsDescription": "Porcentagem de cartões vazados"
+    },
+    "faqList": {
+      "faq1": {
+        "question": "Como posso saber se meu cartão foi vazado?",
+        "answer": "Nosso sistema verifica bancos de dados conhecidos de vazamentos para identificar se seus dados foram expostos."
+      },
+      "faq2": {
+        "question": "É seguro inserir meus dados aqui?",
+        "answer": "Sim, utilizamos criptografia avançada e não armazenamos suas informações. Nosso objetivo é ajudá-lo a se proteger."
+      },
+      "faq3": {
+        "question": "O que devo fazer se meu cartão estiver comprometido?",
+        "answer": "Recomendamos entrar em contato com seu banco imediatamente, bloquear o cartão e monitorar transações suspeitas."
+      },
+      "faq4": {
+        "question": "Como esse serviço funciona?",
+        "answer": "Coletamos os dados de forma segura e cruzamos com bases de dados de vazamentos conhecidos para informar se há alguma exposição."
+      },
+      "faq5": {
+        "question": "Esse serviço é oficial dos bancos?",
+        "answer": "Trabalhamos de forma independente para alertar usuários sobre possíveis vazamentos, mas seguimos os mais altos padrões de segurança."
+      }
+    },
+    "testimonialsList": {
+      "testimonial1": {
+        "name": "Maria da Silva",
+        "role": "Analista de Segurança",
+        "image": "https://randomuser.me/api/portraits/women/45.jpg",
+        "text": "Após utilizar o serviço, fiquei impressionada com a transparência e o cuidado na apresentação das informações. A experiência me alertou sobre os perigos reais da internet e me fez repensar meus hábitos online."
+      },
+      "testimonial2": {
+        "name": "João Pereira",
+        "role": "Consultor Financeiro",
+        "image": "https://randomuser.me/api/portraits/men/32.jpg",
+        "text": "Sempre fui cético em relação a serviços online, mas este projeto me abriu os olhos para as fraudes digitais. A clareza e o impacto das informações me incentivaram a proteger meus dados."
+      },
+      "testimonial3": {
+        "name": "Carlos Eduardo",
+        "role": "Empreendedor Digital",
+        "image": "https://randomuser.me/api/portraits/men/83.jpg",
+        "text": "Utilizei o serviço por pura curiosidade, e a experiência me mostrou como os golpistas operam. Esse alerta foi essencial para me conscientizar sobre a importância de verificar a segurança dos sites que acesso."
+      }
+    }
+  },
+  "resultPage": {
+    "heroTitle": "Ainda bem que isso foi só um <strong>teste!</strong> Mas poderia ter sido real...",
+    "heroDescription": "Este projeto simula a experiência de um golpe online para alertar sobre os riscos de compartilhar dados sem verificar a segurança do ambiente. Conheça as táticas dos golpistas e aprenda a se proteger.",
+    "whatIsThisSite": "O que é este site?",
+    "mainStrategies": "Principais estratégias",
+    "shareProject": "Compartilhe este projeto",
+    "govLink": "https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes/dicas-de-seguranca-contra-fraudes",
+    "govLinkDescription": "Dicas de segurança contra fraudes",
+    "sectionTitleInfos": "Afinal, o que é este site?",
+    "sectionDescriptionInfos": "Ao longo dos últimos anos, inúmeros golpes online têm se aproveitado da confiança, especialmente de pessoas menos familiarizadas com o ambiente digital. Este projeto nasceu ao ver familiares e amigos, principalmente idosos, compartilhando links fraudulentos. Nosso objetivo é demonstrar, de forma educativa, como ambientes aparentemente seguros podem esconder armadilhas perigosas. Ao entender essas estratégias, você estará melhor preparado para proteger seus dados.",
+    "quote": "Você viu como foi fácil acreditar que este site era seguro? Esse é o truque dos criminosos: criar páginas falsas que parecem legítimas para enganar pessoas. Nenhum dado foi salvo, esta simulação é apenas para ensinar. Observe como uma interface bem elaborada pode mascarar práticas enganosas e lembre-se: sua segurança digital começa com a verificação da autenticidade dos sites.",
+    "sectionTitleStrategies": "Principais estratégias utilizadas pelos golpistas",
+    "shareTitle": "Compartilhe este projeto e ajude a proteger mais pessoas",
+    "shareDescription": "Nosso objetivo é alertar e capacitar você a identificar e evitar golpes online. Se esta experiência ajudou a aumentar sua consciência sobre fraudes digitais, compartilhe com amigos e familiares. Juntos, podemos transformar informação em proteção!",
+    "checklist": {
+      "phishing": "<strong>Phishing:</strong> E-mails e sites falsos que imitam instituições confiáveis para coletar informações.",
+      "socialMediaFraud": "<strong>Fraudes em Redes Sociais:</strong> Perfis falsos e ofertas tentadoras que visam roubar dados.",
+      "techSupportScams": "<strong>Golpes de Suporte Técnico:</strong> Contatos que simulam assistência para resolver problemas inexistentes.",
+      "fakePrizes": "<strong>Falsos Prêmios e Sorteios:</strong> Promessas de prêmios ou dinheiro que exigem a entrega de dados pessoais.",
+      "paymentAppFraud": "<strong>Fraudes em Aplicativos de Pagamento:</strong> Solicitações fraudulentas de confirmação de transações.",
+      "professionalDesign": "<strong>Design Profissional:</strong> Layouts limpos e selos de segurança falsos para transmitir credibilidade.",
+      "urgencyAlarm": "<strong>Urgência e Alarme:</strong> Mensagens que induzem ao medo e à pressa, como alertas de vazamento de dados ou ofertas imperdíveis.",
+      "sensitiveDataRequests": "<strong>Solicitação de Dados Sensíveis:</strong> Pedem informações pessoais e financeiras, como número do cartão, CPF, senha e outros dados críticos, que podem ser usados para fraudes."
+    }
+  }
 }

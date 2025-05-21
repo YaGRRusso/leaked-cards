@@ -1,5 +1,5 @@
 import { useStore } from "@nanostores/react"
-import { Moon, Sun } from "@phosphor-icons/react"
+import { MoonIcon, SunIcon } from "@phosphor-icons/react"
 import { useEffect, useState, type LabelHTMLAttributes } from "react"
 
 import { $theme } from "@/stores/theme"
@@ -19,8 +19,8 @@ export function ThemeSwitch({ className, currentTheme = "light", ...props }: Pro
     <label className={cn("toggle text-base-content", className)} {...props}>
       <span className="hidden">Theme Switcher</span>
       <input type="checkbox" checked={checked} onChange={(ev) => $theme.set(ev.target.checked ? "dark" : "light")} />
-      <Moon className="text-black" />
-      <Sun className="text-white" />
+      <MoonIcon className="text-black" />
+      <SunIcon className="text-white" />
     </label>
   )
 }

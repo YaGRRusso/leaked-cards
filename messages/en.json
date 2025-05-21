@@ -1,3 +1,113 @@
 {
-  "hello": "Hello, { name }!"
+  "components": {
+    "tryAgain": "Try Again",
+    "nothingFound": "Nothing Found",
+    "nothingFoundDescription": "The server does not found the requested resource.",
+    "backToStart": "Back to Start",
+    "trustedSite": "Trusted site",
+    "trustedSiteDescription": "100% safe",
+    "createdBy": "Created by",
+    "changeLanguage": "Change language",
+    "leakedCards": "Leaked Cards",
+    "faq": "Frequently asked questions",
+    "testimonials": "Testimonials"
+  },
+  "forms": {
+    "card": {
+      "cardholderName": "Cardholder Name",
+      "cardholderNamePlaceholder": "Cardholder Name",
+      "cardNumber": "Card Number",
+      "cardNumberPlaceholder": "Credit Card Number",
+      "cardCvv": "Card CVV",
+      "cardCvvPlaceholder": "CVV",
+      "cardExpiry": "Card Expiry Date",
+      "cardExpiryPlaceholder": "MM/YY",
+      "cardExpiryMonth": "Expiry Month",
+      "cardExpiryMonthPlaceholder": "MM",
+      "cardExpiryYear": "Expiry Year",
+      "cardExpiryYearPlaceholder": "YY",
+      "submit": "Verify Card"
+    }
+  },
+  "homePage": {
+    "faq": "Frequently asked questions",
+    "testimonials": "Testimonials",
+    "hero": "Find out if you had your <strong>card leaked</strong> in a data breach.",
+    "heroDescription": "Enter your card details and click the button below to verify.",
+    "checkingCard": "Checking card",
+    "checkingCardDescription": "We are checking if your card has been leaked in a data breach. This may take a few seconds...",
+    "statsList": {
+      "checkedCards": "Checked cards",
+      "checkedCardsDescription": "Total number of cards checked",
+      "leakedCards": "Leaked cards",
+      "leakedCardsDescription": "Percentage of cards leaked"
+    },
+    "faqList": {
+      "faq1": {
+        "question": "How can I know if my card has been leaked?",
+        "answer": "Our system checks known leak databases to identify if your data has been exposed."
+      },
+      "faq2": {
+        "question": "Is it safe to enter my data here?",
+        "answer": "Yes, we use advanced encryption and do not store your information. Our goal is to help you stay protected."
+      },
+      "faq3": {
+        "question": "What should I do if my card is compromised?",
+        "answer": "We recommend contacting your bank immediately, blocking the card, and monitoring suspicious transactions."
+      },
+      "faq4": {
+        "question": "How does this service work?",
+        "answer": "We securely collect the data and cross-check it with known leak databases to inform you of any exposure."
+      },
+      "faq5": {
+        "question": "Is this service official from the banks?",
+        "answer": "We work independently to alert users about possible leaks, but we follow the highest security standards."
+      }
+    },
+    "testimonialsList": {
+      "testimonial1": {
+        "name": "Maria da Silva",
+        "role": "Security Analyst",
+        "image": "https://randomuser.me/api/portraits/women/45.jpg",
+        "text": "After using the service, I was impressed by the transparency and care in presenting the information. The experience alerted me to the real dangers of the internet and made me rethink my online habits."
+      },
+      "testimonial2": {
+        "name": "João Pereira",
+        "role": "Financial Consultant",
+        "image": "https://randomuser.me/api/portraits/men/32.jpg",
+        "text": "I have always been skeptical about online services, but this project opened my eyes to digital fraud. The clarity and impact of the information encouraged me to protect my data."
+      },
+      "testimonial3": {
+        "name": "Carlos Eduardo",
+        "role": "Digital Entrepreneur",
+        "image": "https://randomuser.me/api/portraits/men/83.jpg",
+        "text": "I used the service out of pure curiosity, and the experience showed me how scammers operate. This alert was essential to raise my awareness about the importance of verifying the security of the sites I access."
+      }
+    }
+  },
+  "resultPage": {
+    "heroTitle": "Good thing this was just a <strong>test!</strong> But it could have been real...",
+    "heroDescription": "This project simulates the experience of an online scam to raise awareness about the risks of sharing data without verifying the security of the environment. Learn the scammers' tactics and how to protect yourself.",
+    "whatIsThisSite": "What is this site?",
+    "mainStrategies": "Main strategies",
+    "shareProject": "Share this project",
+    "govLink": "https://www.gov.br/anatel/pt-br/assuntos/dicas-contra-fraudes/dicas-de-seguranca-contra-fraudes",
+    "govLinkDescription": "Security tips against fraud",
+    "sectionTitleInfos": "What is this site?",
+    "sectionDescriptionInfos": "Over the years, countless online scams have taken advantage of trust, especially from people less familiar with the digital environment. This project was born after seeing family and friends, especially the elderly, sharing fraudulent links. Our goal is to demonstrate, in an educational way, how seemingly safe environments can hide dangerous traps. By understanding these strategies, you will be better prepared to protect your data.",
+    "quote": "Did you see how easy it was to believe this site was safe? That’s the trick of criminals: creating fake pages that look legitimate to deceive people. No data was saved, this simulation is just to teach. Notice how a well-designed interface can mask deceptive practices, and remember: your digital security starts with verifying the authenticity of websites.",
+    "sectionTitleStrategies": "Main strategies used by scammers",
+    "shareTitle": "Share this project and help protect more people",
+    "shareDescription": "Our goal is to alert and empower you to identify and avoid online scams. If this experience helped raise your awareness about digital fraud, share it with friends and family. Together, we can turn information into protection!",
+    "checklist": {
+      "phishing": "<strong>Phishing:</strong> Fake emails and websites that mimic trusted institutions to collect information.",
+      "socialMediaFraud": "<strong>Social Media Fraud:</strong> Fake profiles and tempting offers aimed at stealing data.",
+      "techSupportScams": "<strong>Tech Support Scams:</strong> Contacts pretending to assist with non-existent problems.",
+      "fakePrizes": "<strong>Fake Prizes and Sweepstakes:</strong> Promises of prizes or money that require personal data.",
+      "paymentAppFraud": "<strong>Payment App Fraud:</strong> Fraudulent requests to confirm transactions.",
+      "professionalDesign": "<strong>Professional Design:</strong> Clean layouts and fake security seals to convey credibility.",
+      "urgencyAlarm": "<strong>Urgency and Alarm:</strong> Messages inducing fear and haste, such as data breach alerts or irresistible offers.",
+      "sensitiveDataRequests": "<strong>Sensitive Data Requests:</strong> Asking for personal and financial information, such as card numbers, CPF, passwords, and other critical data that can be used for fraud."
+    }
+  }
 }
