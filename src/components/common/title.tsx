@@ -1,29 +1,31 @@
-import { Link, LinkComponentProps } from "@tanstack/react-router"
+import type { AnchorHTMLAttributes, FC, ReactNode } from 'react';
 
-import type { FC, ReactNode } from "react"
+import { cn } from '@/utils/cn';
 
-import { cn } from "@/utils/cn"
-
-export interface CommonTitleProps extends LinkComponentProps {
-  icon?: ReactNode
-  title?: string
+export interface CommonTitleProps
+  extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  icon?: ReactNode;
+  title?: string;
 }
 
-export const CommonTitle: FC<CommonTitleProps> = ({ icon, title, className, hash, ...rest }) => {
+export const CommonTitle: FC<CommonTitleProps> = ({
+  icon,
+  title,
+  className,
+  ...rest
+}) => {
   return (
-    <Link
-      id={typeof hash === "string" ? hash : undefined}
-      hash={hash}
+    <a
       className={cn(
-        "mb-4 flex link items-center gap-2 border-b border-base-content/20 py-4 text-xl font-medium tracking-wider link-hover",
-        className,
+        'link link-hover mb-4 flex items-center gap-2 border-base-content/20 border-b py-4 font-medium text-xl tracking-wider',
+        className
       )}
       {...rest}
     >
       {icon}
       <h2 className="flex-1">{title}</h2>
-    </Link>
-  )
-}
+    </a>
+  );
+};
 
-CommonTitle.displayName = "CommonTitle"
+CommonTitle.displayName = 'CommonTitle';

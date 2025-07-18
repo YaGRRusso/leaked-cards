@@ -2,10 +2,21 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.rulers": [120],
-  "eslint.format.enable": true,
-  "editor.codeActionsOnSave": { "source.fixAll.eslint": "explicit" },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript, javascriptreact, typescript, typescriptreact]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript][typescript][javascriptreact][typescriptreact][json][jsonc][graphql][css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnPaste": true,
+  "emmet.showExpandedAbbreviation": "never",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
   }
 }

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
+  "extends": ["ultracite"],
+  "overrides": [
+    {
+      "includes": [".vscode/**"],
+      "linter": {
+        "enabled": false
+      },
+      "formatter": {
+        "enabled": false
+      }
+    },
+    {
+      "includes": ["**/*.astro"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useConst": "off",
+            "useImportType": "off"
+          },
+          "correctness": {
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/*.css"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnknownProperty": "off"
+          },
+          "nursery": {
+            "noUnknownAtRule": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noConsole": "off"
+          },
+          "performance": {
+            "noImgElement": "off"
+          }
+        }
+      }
+    }
+  ]
+}

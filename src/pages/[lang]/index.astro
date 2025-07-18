@@ -1,23 +1,14 @@
 ---
-import { LanguageSelect } from "@/components/language-select"
-import { ThemeSwitch } from "@/components/theme-switch"
-import Layout from "@/layouts/layout.astro"
-import Root from "@/layouts/root.astro"
-import { getTranslation } from "@/utils/i18n"
+import Layout from '@/layouts/layout.astro';
+import Root from '@/layouts/root.astro';
 
-export async function getStaticPaths() {
-  return [{ params: { lang: "en" } }, { params: { lang: "pt" } }]
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }, { params: { lang: 'pt' } }];
 }
-
-const { t } = getTranslation(Astro.currentLocale)
 ---
 
 <Root>
   <Layout>
-    <div class="flex h-screen flex-col items-center justify-center gap-4">
-      <ThemeSwitch client:load />
-      <h1>{t("hello", { name: "Yago" })}</h1>
-      <LanguageSelect client:load currentPath={Astro.url.pathname} />
-    </div>
+    <div class="flex h-screen flex-col items-center justify-center gap-4"></div>
   </Layout>
 </Root>

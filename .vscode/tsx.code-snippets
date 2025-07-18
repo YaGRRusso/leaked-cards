@@ -13,17 +13,17 @@
       "",
       "import { cn } from '@/utils/cn'",
       "",
-      "export interface Props extends HTMLAttributes<HTMLDivElement> {}",
+      "export interface ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props extends HTMLAttributes<HTMLDivElement> {}",
       "",
-      "export function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}({ children, className, ...props }: Props) {",
+      "export function ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}({ children, className, ...props }: ${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}}Props) {",
       "  return (",
       "    <div className={cn('', className)} {...props}>",
       "      {children}",
       "    </div>",
       "  )",
       "}",
-      "",
+      ""
     ],
-    "description": "Create ReactJS component with all is necessary",
-  },
+    "description": "Create ReactJS component with all is necessary"
+  }
 }
