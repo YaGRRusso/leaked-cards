@@ -1,9 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui" {
   logs: false;
-  themes:
-    light --default,
-    dark --prefersdark;
+  themes: light --default, dark --prefersdark;
 }
 
 @utility container {
@@ -11,7 +9,7 @@
   padding: 1rem;
   max-width: 100%;
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     max-width: 1024px;
     padding-inline: 2rem;
   }

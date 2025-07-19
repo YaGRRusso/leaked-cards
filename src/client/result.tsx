@@ -25,7 +25,7 @@ export function ResultClient({ children, className, ...props }: ResultProps) {
   return (
     <div
       className={cn(
-        'flex min-h-screen flex-col items-center justify-center gap-8 sm:gap-16',
+        'flex min-h-screen flex-col items-center justify-center gap-8 sm:gap-12',
         className
       )}
       {...props}

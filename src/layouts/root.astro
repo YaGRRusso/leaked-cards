@@ -28,12 +28,19 @@ const {
   url,
 } = Astro.props;
 
-const currentLocale = locale ?? Astro.currentLocale ?? 'en';
-$locale.set(currentLocale as Locale);
+const currentLocale = (locale ?? Astro.currentLocale ?? 'en') as Locale;
+$locale.set(currentLocale);
+
+const previews = {
+  pt: '/preview-pt.png',
+  en: '/preview-en.png',
+};
+
+const preview = image ?? previews[currentLocale];
 ---
 
 <!doctype html>
-<html class="light" lang={currentLocale}>
+<html class="light scroll-smooth" lang={currentLocale}>
   <head>
     <title>{title}</title>
     <meta charset="UTF-8" />
@@ -42,15 +49,21 @@ $locale.set(currentLocale as Locale);
     <meta name="author" content={author} />
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="image" content={image} />
+    <meta name="image" content={preview} />
     <meta name="keywords" content={keywords} />
     <meta property="og:title" content={title} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={url} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
+    <meta property="og:image" content={preview} />
     <meta property="og:image:alt" content={imageAlt || title} />
     <meta property="og:locale" content={currentLocale} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={url} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={preview} />
+    <meta name="twitter:image:alt" content={imageAlt || title} />
     <link rel="icon" type="image/svg+xml" href="/leaked-cards/favicon.svg" />
     <ClientRouter />
   </head>
