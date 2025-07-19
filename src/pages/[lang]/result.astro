@@ -1,5 +1,5 @@
 ---
-import { HomeClient } from '@/client/home';
+import { ResultClient } from '@/client/result';
 import Layout from '@/layouts/layout.astro';
 import Root from '@/layouts/root.astro';
 import { getTranslation } from '@/utils/i18n';
@@ -12,11 +12,11 @@ const { t } = getTranslation(Astro.currentLocale);
 ---
 
 <Root
-  title={t("pages.home.title")}
-  description={t("pages.home.description")}
-  keywords={t("pages.home.keywords")}
+  title={t("pages.result.title")}
+  description={t("pages.result.description")}
+  keywords={t("pages.result.keywords")}
 >
   <Layout>
-    <HomeClient client:load/>
+    <ResultClient client:load/>
   </Layout>
 </Root>

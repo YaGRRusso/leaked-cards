@@ -1,4 +1,6 @@
-import { alea } from 'seedrandom';
+import seedrandom from 'seedrandom';
+
+const { alea } = seedrandom;
 
 const today = new Date().setHours(0, 0, 0, 0);
 

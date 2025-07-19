@@ -2,6 +2,8 @@ import type { FC, HTMLAttributes } from 'react';
 
 import { cn } from '@/utils/cn';
 
+import { CommonTrans } from './trans';
+
 export interface CommonCheckListProps extends HTMLAttributes<HTMLUListElement> {
   list?: {
     text: string;
@@ -18,8 +20,9 @@ export const CommonCheckList: FC<CommonCheckListProps> = ({
       {list?.map((item) => (
         <li className="flex gap-2" key={item.text}>
           <span>
-            {/* <Trans components={{ strong: <strong className="font-extrabold text-accent" /> }}>{item.text}</Trans> */}
-            <span>{item.text}</span>
+            <CommonTrans className="[&_strong]:font-extrabold [&_strong]:text-accent">
+              {item.text}
+            </CommonTrans>
           </span>
         </li>
       ))}

@@ -24,8 +24,9 @@ export const CommonTestimonials: FC<CommonTestimonialsProps> = ({
   return (
     <ul className={cn('flex w-full flex-col gap-4', className)} {...rest}>
       <CommonTitle
-        href="/"
+        href="#testimonials"
         icon={<UsersIcon />}
+        id="testimonials"
         title={t('components.testimonials')}
       />
       {testimonials?.map((testimonial, index) => (

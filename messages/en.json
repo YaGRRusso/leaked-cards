@@ -109,5 +109,21 @@
       "urgencyAlarm": "<strong>Urgency and Alarm:</strong> Messages inducing fear and haste, such as data breach alerts or irresistible offers.",
       "sensitiveDataRequests": "<strong>Sensitive Data Requests:</strong> Asking for personal and financial information, such as card numbers, CPF, passwords, and other critical data that can be used for fraud."
     }
+  },
+  "pages": {
+    "home": {
+      "title": "Leaked Cards - Check if your card has been compromised",
+      "description": "Find out if your credit card has been leaked in a data breach. Enter your card details and check now.",
+      "keywords": "leaked cards, card verification, data security, card protection, online fraud"
+    },
+    "result": {
+      "title": "Leaked Cards - Verification Result",
+      "description": "Check the result of your credit card verification. Find out if your card has been compromised in a data breach.",
+      "keywords": "verification result, compromised card, data security, card protection"
+    }
+  },
+  "share": {
+    "url": "https://leaked-cards.netlify.app/en",
+    "description": "Check out this site to see if your card has been leaked in a data breach. It's free, safe, and easy to use!"
   }
 }

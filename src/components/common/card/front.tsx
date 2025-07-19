@@ -33,15 +33,15 @@ export const CardFront: FC<CardFrontProps> = ({
 
     switch (brand) {
       case CardBrand.AmericanExpress:
-        return <AmericanExpressIcon />;
+        return <img alt="American Express" src={AmericanExpressIcon.src} />;
       case CardBrand.DinersClub:
-        return <DinersClubIcon />;
+        return <img alt="Diners Club" src={DinersClubIcon.src} />;
       case CardBrand.JCB:
-        return <JcbIcon />;
+        return <img alt="JCB" src={JcbIcon.src} />;
       case CardBrand.Mastercard:
-        return <MastercardIcon />;
+        return <img alt="Mastercard" src={MastercardIcon.src} />;
       case CardBrand.Visa:
-        return <VisaIcon />;
+        return <img alt="Visa" src={VisaIcon.src} />;
       default:
         return null;
     }

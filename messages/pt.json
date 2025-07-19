@@ -109,5 +109,21 @@
       "urgencyAlarm": "<strong>Urgência e Alarme:</strong> Mensagens que induzem ao medo e à pressa, como alertas de vazamento de dados ou ofertas imperdíveis.",
       "sensitiveDataRequests": "<strong>Solicitação de Dados Sensíveis:</strong> Pedem informações pessoais e financeiras, como número do cartão, CPF, senha e outros dados críticos, que podem ser usados para fraudes."
     }
+  },
+  "pages": {
+    "home": {
+      "title": "Cartões Vazados - Verifique se o seu cartão foi comprometido",
+      "description": "Descubra se o seu cartão de crédito foi vazado em uma violação de dados. Insira os detalhes do seu cartão e verifique agora.",
+      "keywords": "cartões vazados, verificação de cartão, segurança de dados, proteção de cartão, fraudes online"
+    },
+    "result": {
+      "title": "Cartões Vazados - Resultado da Verificação",
+      "description": "Verifique o resultado da verificação do seu cartão de crédito. Descubra se o seu cartão foi comprometido em uma violação de dados.",
+      "keywords": "resultado da verificação, cartão comprometido, segurança de dados, proteção de cartão"
+    }
+  },
+  "share": {
+    "url": "https://leaked-cards.netlify.app/pt",
+    "description": "Confira este site para verificar se o seu cartão foi vazado em uma violação de dados. É grátis, seguro e fácil de usar!"
   }
 }

@@ -5,7 +5,7 @@ import { cn } from '@/utils/cn';
 import { useTranslation } from '@/utils/i18n';
 
 const BASE_URL = import.meta.env.PUBLIC_BASE_URL;
-const LOCALE_REGEX = /^(en|pt)/;
+const LOCALE_REGEX = /^\/?(en|pt)/;
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   currentPath?: string;

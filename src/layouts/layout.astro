@@ -1,7 +1,9 @@
 ---
+import { CreditCardIcon } from '@phosphor-icons/react';
 import { LanguageSelect } from '@/components/layout/language-select';
 import { LayoutShield } from '@/components/layout/shield';
 import { ThemeSwitch } from '@/components/layout/theme-switch';
+import { getPath } from '@/helpers/get-path';
 import { getTranslation } from '@/utils/i18n';
 
 const { t } = getTranslation(Astro.currentLocale);
@@ -12,8 +14,9 @@ const currentPath = Astro.url.pathname;
 <body class="flex min-h-screen flex-col bg-base-100 text-base-content">
   <header class="sticky top-0 z-10 bg-base-200">
     <div class="container flex flex-col items-center justify-center gap-4 sm:flex-row sm:justify-between">
-      <a href="/">
-        <h2 class="text-3xl font-medium tracking-wide">{t("components.leakedCards")}</h2>
+      <a href={getPath(currentPath, '/')} class="inline-flex items-center gap-2">
+        <CreditCardIcon/>
+        <h2 class="text-xl font-medium tracking-wide">{t("components.leakedCards")}</h2>
       </a>
       <div class="flex items-center gap-2">
         <ThemeSwitch client:load />
@@ -21,7 +24,7 @@ const currentPath = Astro.url.pathname;
       </div>
     </div>
   </header>
-  <main class="container flex-1">
+  <main class="container flex-1 py-20">
     <slot />
   </main>
   <footer class="bg-base-200">

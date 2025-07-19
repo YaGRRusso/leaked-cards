@@ -2,11 +2,7 @@
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.rulers": [120],
-  "[javascript, javascriptreact, typescript, typescriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript][typescript][javascriptreact][typescriptreact][json][jsonc][graphql][css]": {
+  "[javascript][typescript][javascriptreact][typescriptreact][json][jsonc][graphql][css][astro]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "typescript.tsdk": "node_modules/typescript/lib",

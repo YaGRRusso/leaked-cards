@@ -2,6 +2,7 @@ import { Slot } from '@radix-ui/react-slot';
 import type { FC, HTMLAttributes, ReactNode } from 'react';
 
 import { cn } from '@/utils/cn';
+import { CommonTrans } from './trans';
 
 export interface CommonHeroProps extends HTMLAttributes<HTMLDivElement> {
   icon?: ReactNode;
@@ -22,8 +23,9 @@ export const CommonHero: FC<CommonHeroProps> = ({
       <div className="hero-content flex-col px-0 text-center">
         {icon && <Slot className="text-7xl">{icon}</Slot>}
         <h1 className="font-bold text-4xl tracking-wider sm:text-5xl">
-          {/* <Trans components={{ strong: <strong className="font-extrabold text-accent uppercase" /> }}>{title}</Trans> */}
-          <span>{title}</span>
+          <CommonTrans className="[&_strong]:font-extrabold [&_strong]:text-accent [&_strong]:uppercase">
+            {title}
+          </CommonTrans>
         </h1>
         {description && <p className="max-w-3xl text-muted">{description}</p>}
         {children}
