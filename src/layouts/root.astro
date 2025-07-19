@@ -17,6 +17,8 @@ interface Props {
   url?: string;
 }
 
+const PUBLIC_BASE_URL = import.meta.env.PUBLIC_BASE_URL;
+
 const {
   author = 'Yago Russo',
   title = 'Astro',
@@ -31,10 +33,10 @@ const {
 const currentLocale = (locale ?? Astro.currentLocale ?? 'en') as Locale;
 $locale.set(currentLocale);
 
-const favicon = '/leaked-cards/favicon.svg';
+const favicon = `/${PUBLIC_BASE_URL}favicon.svg`;
 const previews = {
-  pt: '/leaked-cards/preview-pt.png',
-  en: '/leaked-cards/preview-en.png',
+  pt: `/${PUBLIC_BASE_URL}preview-pt.png`,
+  en: `/${PUBLIC_BASE_URL}preview-en.png`,
 };
 
 const preview = image ?? previews[currentLocale];
